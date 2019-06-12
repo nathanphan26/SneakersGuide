@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Placeholder from '../placeholder.jpg'
-import YeezyBlack from '../yeezy_black.jpg'
-import YeezySynth from '../yeezy_synth.jpg'
-import YeezyLundmark from '../yeezy_lundmark.jpg'
+import Placeholder from '../assets/placeholder.jpg'
+import YeezyBlack from '../assets/yeezy_black.jpg'
+import YeezySynth from '../assets/yeezy_synth.jpg'
+import YeezyLundmark from '../assets/yeezy_lundmark.jpg'
 import { Row, Col } from 'reactstrap';
 
 import Image from './Image';
