@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Placeholder from './placeholder.jpg'
 import { Container, Row, Col } from 'reactstrap';
  
 import Header from './components/Header'
@@ -23,18 +24,21 @@ function App() {
   }
 
   const colStyle1 = {
+    padding: '0',
     height: '100%',
     backgroundColor: 'red',
     textAlign: 'center'
   }
 
   const colStyle2 = {
+    padding: '0',
     height: '100%',
     backgroundColor: 'blue',
     textAlign: 'center'
   }
 
   const colStyle3 = {
+    padding: '0',
     height: '100%',
     backgroundColor: 'green',
     textAlign: 'center'
@@ -42,6 +46,15 @@ function App() {
 
   const innerRowStyle = {
     height: '300px'
+  }
+
+  const innerColStyle = {
+    padding: '0'
+  }
+
+  const imageStyle = {
+    margin: '0',
+    padding: '25px'
   }
 
   return (
@@ -52,12 +65,20 @@ function App() {
           <Col xs='2' style={colStyle1}>Hello</Col>
           <Col xs='8' style={colStyle2}>
             <Row style={innerRowStyle}>
-              <Col>1</Col>
-              <Col>2</Col>
+              <Col style={innerColStyle}>
+                <img src={Placeholder} alt="Placeholder" style={imageStyle}/>
+              </Col>
+              <Col style={innerColStyle}>
+                <img src={Placeholder} alt="Placeholder" style={imageStyle}/>
+              </Col>
             </Row>
             <Row style={innerRowStyle}>
-              <Col>3</Col>
-              <Col>4</Col>
+              <Col style={innerColStyle}>
+                <img src={Placeholder} alt="Placeholder" style={imageStyle}/>
+              </Col>
+              <Col style={innerColStyle}>
+                <img src={Placeholder} alt="Placeholder" style={imageStyle}/>
+              </Col>
             </Row>
           </Col>
           <Col xs='2' style={colStyle3}>Hello</Col>
