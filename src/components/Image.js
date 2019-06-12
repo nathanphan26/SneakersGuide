@@ -17,7 +17,7 @@ export class Image extends Component {
 
     return (
       <Col style={innerColStyle}>
-        <img src={src} alt="Placeholder" className="shoes" style={imageStyle} width='250px' height='250px'/>
+        <img src={src} alt="Placeholder" className="shoes" style={imageStyle} width='400px' height='400px'/>
       </Col>
     )
   }

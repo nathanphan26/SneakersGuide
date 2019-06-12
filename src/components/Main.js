@@ -18,7 +18,7 @@ export class Main extends Component {
     }
 
     const innerRowStyle = {
-      height: '300px'
+      height: '450px'
     }
 
     return (
