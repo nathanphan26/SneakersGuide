@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Placeholder from '../placeholder.jpg'
+import YeezyBlack from '../yeezy_black.jpg'
+import YeezySynth from '../yeezy_synth.jpg'
+import YeezyLundmark from '../yeezy_lundmark.jpg'
 import { Row, Col } from 'reactstrap';
 
 import Image from './Image';
@@ -21,16 +24,16 @@ export class Main extends Component {
     return (
       <Col xs='8' style={colStyle2}>
         <Row style={innerRowStyle}>
-          <Image src={Placeholder}/>
-          <Image src={Placeholder}/>
+          <Image src={YeezyBlack}/>
+          <Image src={YeezyBlack}/>
         </Row>
         <Row style={innerRowStyle}>
-          <Image src={Placeholder}/>
-          <Image src={Placeholder}/>
+          <Image src={YeezyLundmark}/>
+          <Image src={YeezyLundmark}/>
         </Row>
         <Row style={innerRowStyle}>
-          <Image src={Placeholder}/>
-          <Image src={Placeholder}/>
+          <Image src={YeezySynth}/>
+          <Image src={YeezySynth}/>
         </Row>
       </Col>
     )
