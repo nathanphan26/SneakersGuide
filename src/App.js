@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import { Route} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Row } from 'reactstrap';
  
-import Header from './components/Header'
-import Ads from './components/Ads'
-import Main from './components/Main'
+import Header from './components/Header';
+import Ads from './components/Ads';
+import Main from './components/Main';
+import Analysis from './components/Analysis';
+import Subscribe from './components/Subscribe';
 
 function App() {
 
@@ -41,7 +43,11 @@ function App() {
           <Ads />
 
           {/* Main */}
-          <Route path='/' exact component={Main} />
+          <Switch>
+            <Route exact path='/' component={Main} />
+            <Route path='/analysis/' component={Analysis} />
+            <Route path='/subscribe/' component={Subscribe} />
+          </Switch>
 
           {/* Ads */}
           <Ads />
