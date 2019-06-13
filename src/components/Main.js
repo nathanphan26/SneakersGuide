@@ -14,11 +14,26 @@ export class Main extends Component {
       padding: '0',
       height: '100%',
       // backgroundColor: 'blue',
-      textAlign: 'center'
+      textAlign: 'center',
+      overflow: 'auto'
     }
 
     const innerRowStyle = {
-      height: '450px'
+      height: '450px',
+      overflow: 'auto'
+    }
+
+    const innerColStyle = {
+      padding: '0'
+    }
+
+    const divStyle = {
+      background: `url('${YeezyBlack}')`,
+      height: '350px',
+      width: '350px',
+      paddingTop: '25px',
+      margin: '25px',
+      verticalAlign: 'middle'
     }
 
     return (

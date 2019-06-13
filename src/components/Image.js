@@ -15,9 +15,21 @@ export class Image extends Component {
       padding: '25px'
     }
 
+    const divStyle = {
+      background: `url('${src}')`,
+      height: '350px',
+      width: '350px',
+      paddingTop: '25px',
+      margin: '25px',
+      verticalAlign: 'middle'
+    }
+
     return (
       <Col style={innerColStyle}>
-        <img src={src} alt="Placeholder" className="shoes" style={imageStyle} width='400px' height='400px'/>
+        <div className="shoes" style={divStyle}>
+          MONTH <br />
+          22
+        </div>
       </Col>
     )
   }
