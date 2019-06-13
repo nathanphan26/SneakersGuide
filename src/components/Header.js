@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -6,11 +7,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 export class Header extends Component {
   constructor(props) {
@@ -37,13 +34,13 @@ export class Header extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Home</NavLink>
+                <NavLink tag={Link} to="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/analysis/">Post-Drop-Analysis</NavLink>
+                <NavLink tag={Link} to="/analysis/">Post-Drop-Analysis</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/subscribe/">Subscribe</NavLink>
+                <NavLink tag={Link} to="/subscribe/">Subscribe</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

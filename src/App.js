@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-import { Container, Row, Col } from 'reactstrap';
+import { Route} from "react-router-dom";
+import { Row } from 'reactstrap';
  
 import Header from './components/Header'
 import Ads from './components/Ads'
@@ -40,7 +41,7 @@ function App() {
           <Ads />
 
           {/* Main */}
-          <Main />
+          <Route path='/' exact component={Main} />
 
           {/* Ads */}
           <Ads />
