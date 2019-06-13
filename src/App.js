@@ -16,6 +16,10 @@ function App() {
     // marginRight:'10%'
   }
 
+  const mainStyle = {
+    overflow: 'auto'
+  }
+
   const headerStyle = {
 
   }
@@ -26,7 +30,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={mainStyle}>
       <Header style={headerStyle}/>
 
       <div style={testStyle}>
