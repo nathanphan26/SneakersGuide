@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import Placeholder from '../assets/placeholder.jpg'
+import { Row, Col } from 'reactstrap';
+import MediaQuery from 'react-responsive';
+
 import YeezyBlack from '../assets/yeezy_black.jpg'
 import YeezySynth from '../assets/yeezy_synth.jpg'
 import YeezyLundmark from '../assets/yeezy_lundmark.jpg'
-import { Row, Col } from 'reactstrap';
 
 import Image from './Image';
 
@@ -20,36 +21,83 @@ export class Main extends Component {
 
     const innerRowStyle = {
       height: '450px',
-      overflow: 'auto'
-    }
+      overflow: 'auto',
 
-    const innerColStyle = {
-      padding: '0'
-    }
-
-    const divStyle = {
-      background: `url('${YeezyBlack}')`,
-      height: '350px',
-      width: '350px',
-      paddingTop: '25px',
-      margin: '25px',
-      verticalAlign: 'middle'
+      display: 'flex',
+      justifyContent: 'space-around'
     }
 
     return (
       <Col xs='8' style={colStyle2}>
-        <Row style={innerRowStyle}>
-          <Image src={YeezyBlack}/>
-          <Image src={YeezyBlack}/>
-        </Row>
-        <Row style={innerRowStyle}>
-          <Image src={YeezyLundmark}/>
-          <Image src={YeezyLundmark}/>
-        </Row>
-        <Row style={innerRowStyle}>
-          <Image src={YeezySynth}/>
-          <Image src={YeezySynth}/>
-        </Row>
+        <MediaQuery minDeviceWidth={1200}>
+          {(matches) => {
+            if (matches) {
+              return (
+                <Row style={innerRowStyle}>
+                  <Image src={YeezyBlack}/>
+                  <Image src={YeezyBlack}/>
+                </Row>
+              );
+            } else {
+              return (
+                <React.Fragment>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                </React.Fragment>
+              );
+            }
+          }}
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={1200}>
+          {(matches) => {
+            if (matches) {
+              return (
+                <Row style={innerRowStyle}>
+                  <Image src={YeezyBlack}/>
+                  <Image src={YeezyBlack}/>
+                </Row>
+              );
+            } else {
+              return (
+                <React.Fragment>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                </React.Fragment>
+              );
+            }
+          }}
+        </MediaQuery>
+        <MediaQuery minDeviceWidth={1200}>
+          {(matches) => {
+            if (matches) {
+              return (
+                <Row style={innerRowStyle}>
+                  <Image src={YeezyBlack}/>
+                  <Image src={YeezyBlack}/>
+                </Row>
+              );
+            } else {
+              return (
+                <React.Fragment>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                  <Row style={innerRowStyle}>
+                    <Image src={YeezyBlack}/>
+                  </Row>
+                </React.Fragment>
+              );
+            }
+          }}
+        </MediaQuery>
       </Col>
     )
   }

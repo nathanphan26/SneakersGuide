@@ -25,12 +25,12 @@ export class Image extends Component {
     }
 
     return (
-      <Col style={innerColStyle}>
+      // <Col style={innerColStyle}>
         <div className="shoes" style={divStyle}>
           MONTH <br />
           22
         </div>
-      </Col>
+      // </Col>
     )
   }
 }
