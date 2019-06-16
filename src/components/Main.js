@@ -21,7 +21,10 @@ export class Main extends Component {
 
     const innerRowStyle = {
       height: '450px',
-      overflow: 'auto'
+      overflow: 'auto',
+
+      display: 'flex',
+      justifyContent: 'space-around'
     }
 
     return (
