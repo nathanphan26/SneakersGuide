@@ -17,11 +17,12 @@ export class Image extends Component {
 
     const divStyle = {
       background: `url('${src}')`,
-      height: '350px',
-      width: '350px',
+      height: '275px',
+      minWidth: '275px',
       paddingTop: '25px',
       margin: '25px',
-      verticalAlign: 'middle'
+      verticalAlign: 'middle',
+      overflow: 'hidden'
     }
 
     return (
