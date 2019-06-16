@@ -3,10 +3,13 @@ import { Row, Col } from 'reactstrap';
 
 export class Month extends Component {
   render() {
+
+    const { month } = this.props
+
     return (
       <Row className="months">
         <Col sm="12" md={{ size: 4, offset: 4 }}>
-          <h3>June</h3>
+          <h3 className="month">{month}</h3>
         </Col>
       </Row>
     )
