@@ -20,23 +20,14 @@ function App() {
     // marginRight:'10%'
   }
 
-  const mainStyle = {
-    overflow: 'auto',
-    height: '100%'
-  }
-
-  const headerStyle = {
-
-  }
-
   const rowStyle = {
     height: '100%',
     backgroundColor: 'grey'
   }
 
   return (
-    <div className="App" style={mainStyle}>
-      <Header style={headerStyle}/>
+    <div className="App">
+      <Header />
 
       <div style={testStyle}>
         <Row style={rowStyle}>

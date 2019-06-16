@@ -11,30 +11,10 @@ import Month from './Month';
 
 export class Main extends Component {
   render() {
-
-    const colStyle2 = {
-      padding: '0',
-      height: '100%',
-      // backgroundColor: 'blue',
-      textAlign: 'center',
-      overflow: 'hidden'
-    }
-
-    const innerRowStyle = {
-      height: '350x',
-      overflow: 'hidden',
-
-      display: 'flex',
-      justifyContent: 'space-around'
-    }
-
-
-
-    return (
-      
-      <Col xs='12' md='8' style={colStyle2}>
+    return ( 
+      <Col xs='12' md='8' id="mainContainer">
         <Month />
-        <Row style={innerRowStyle}>
+        <Row className="shoeRow">
           <MediaQuery query="(max-device-width: 767px)">
             <Image src={YeezyBlack}/>
           </MediaQuery>
@@ -44,7 +24,7 @@ export class Main extends Component {
           </MediaQuery>
         </Row>
         <Month />
-        <Row style={innerRowStyle}>
+        <Row className="shoeRow">
           <MediaQuery query="(max-device-width: 767px)">
             <Image src={YeezyBlack}/>
           </MediaQuery>
