@@ -16,88 +16,38 @@ export class Main extends Component {
       height: '100%',
       // backgroundColor: 'blue',
       textAlign: 'center',
-      overflow: 'auto'
+      overflow: 'hidden'
     }
 
     const innerRowStyle = {
-      height: '450px',
-      overflow: 'auto',
+      height: '350x',
+      overflow: 'hidden',
 
       display: 'flex',
       justifyContent: 'space-around'
     }
 
     return (
-      <Col xs='8' style={colStyle2}>
-        <MediaQuery minDeviceWidth={1200}>
-          {(matches) => {
-            if (matches) {
-              return (
-                <Row style={innerRowStyle}>
-                  <Image src={YeezyBlack}/>
-                  <Image src={YeezyBlack}/>
-                </Row>
-              );
-            } else {
-              return (
-                <React.Fragment>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                </React.Fragment>
-              );
-            }
-          }}
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1200}>
-          {(matches) => {
-            if (matches) {
-              return (
-                <Row style={innerRowStyle}>
-                  <Image src={YeezyBlack}/>
-                  <Image src={YeezyBlack}/>
-                </Row>
-              );
-            } else {
-              return (
-                <React.Fragment>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                </React.Fragment>
-              );
-            }
-          }}
-        </MediaQuery>
-        <MediaQuery minDeviceWidth={1200}>
-          {(matches) => {
-            if (matches) {
-              return (
-                <Row style={innerRowStyle}>
-                  <Image src={YeezyBlack}/>
-                  <Image src={YeezyBlack}/>
-                </Row>
-              );
-            } else {
-              return (
-                <React.Fragment>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                  <Row style={innerRowStyle}>
-                    <Image src={YeezyBlack}/>
-                  </Row>
-                </React.Fragment>
-              );
-            }
-          }}
-        </MediaQuery>
+      
+      <Col xs='12' md='8' style={colStyle2}>
+        <Row style={innerRowStyle}>
+          <MediaQuery query="(max-device-width: 767px)">
+            <Image src={YeezyBlack}/>
+          </MediaQuery>
+          <MediaQuery query="(min-device-width: 768px)">
+            <Image src={YeezyBlack}/>
+            <Image src={YeezyBlack}/>
+          </MediaQuery>
+        </Row>
+        <Row style={innerRowStyle}>
+          <MediaQuery query="(max-device-width: 767px)">
+            <Image src={YeezyBlack}/>
+          </MediaQuery>
+          <MediaQuery query="(min-device-width: 768px)">
+            <Image src={YeezyBlack}/>
+            <Image src={YeezyBlack}/>
+          </MediaQuery>
+        </Row>
       </Col>
     )
   }

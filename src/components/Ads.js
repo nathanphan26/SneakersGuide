@@ -13,7 +13,7 @@ export class Ads extends Component {
     }
 
     return (
-      <Col xs='2' style={colStyle1}>Hello</Col>
+      <Col xs='0' md='2' style={colStyle1}>Hello</Col>
     )
   }
 }
