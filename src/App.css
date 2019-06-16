@@ -6,10 +6,59 @@ body {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+.App {
+  overflow: hidden;
+  height: 100%;
+}
+
+.mainSection {
+  height: 100%;
+}
+
+.mainRow {
+  height: 100%;
+  background-color: grey;
+}
+
+.months {
+  padding-top: 10px;
+}
+
 .shoes {
   transition: all .2s ease-in-out;
+  background: url('${src}');
+  height: 275px;
+  min-width: 275px;
+  padding-top: 25px;
+  margin: 25px;
+  vertical-align: middle;
+  overflow: 'hidden';
+}
+
+.shoeExpired {
+  opacity: .5;
 }
 
 .shoes:hover {
   transform: scale(1.1);
+}
+
+.shoeRow {
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ads {
+  padding: 0;
+  height: 100%;
+  text-align: center;
+}
+
+#mainContainer {
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
 }

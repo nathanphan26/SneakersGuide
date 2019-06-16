@@ -4,16 +4,10 @@ import { Col } from 'reactstrap';
 export class Ads extends Component {
 
   render() {
-
-    const colStyle1 = {
-      padding: '0',
-      height: '100%',
-      backgroundColor: 'green',
-      textAlign: 'center'
-    }
-
     return (
-      <Col xs='0' md='2' style={colStyle1}>Hello</Col>
+      <Col xs='0' md='2' className="ads">
+        
+      </Col>
     )
   }
 }
