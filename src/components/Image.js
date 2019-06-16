@@ -3,17 +3,17 @@ import { Col } from 'reactstrap';
 
 export class Image extends Component {
   render() {
-    const {src} = this.props;
+    const {src, month, day, title, expired} = this.props;
 
     const divStyle = {
       background: `url('${src}')`
     }
 
     return (
-        <div className="shoes" style={divStyle}>
-          MONTH <br />
-          22 <br /> <br /> <br /> <br /> <br /> <br /> <br />
-          Yeezy 350 V2 Triple Black
+        <div className={`shoes ${expired ? 'shoeExpired' : ''}`} style={divStyle}>
+          {month} <br />
+          {day} <br /> <br /> <br /> <br /> <br /> <br /> <br />
+          {title}
         </div>
     )
   }
