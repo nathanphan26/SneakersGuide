@@ -21,7 +21,8 @@ function App() {
   }
 
   const mainStyle = {
-    overflow: 'auto'
+    overflow: 'auto',
+    height: '100%'
   }
 
   const headerStyle = {
