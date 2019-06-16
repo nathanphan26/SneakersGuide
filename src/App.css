@@ -11,6 +11,15 @@ body {
   height: 100%;
 }
 
+.mainSection {
+  height: 100%;
+}
+
+.mainRow {
+  height: 100%;
+  background-color: grey;
+}
+
 .months {
   padding-top: 10px;
 }
@@ -26,6 +35,10 @@ body {
   overflow: 'hidden';
 }
 
+.shoeExpired {
+  opacity: .5;
+}
+
 .shoes:hover {
   transform: scale(1.1);
 }
@@ -35,6 +48,12 @@ body {
   overflow: hidden;
   display: flex;
   justify-content: space-around;
+}
+
+.ads {
+  padding: 0;
+  height: 100%;
+  text-align: center;
 }
 
 #mainContainer {

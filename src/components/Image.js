@@ -12,7 +12,8 @@ export class Image extends Component {
     return (
         <div className="shoes" style={divStyle}>
           MONTH <br />
-          22
+          22 <br /> <br /> <br /> <br /> <br /> <br /> <br />
+          Yeezy 350 V2 Triple Black
         </div>
     )
   }

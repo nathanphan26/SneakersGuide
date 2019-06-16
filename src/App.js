@@ -11,26 +11,12 @@ import Analysis from './components/Analysis';
 import Subscribe from './components/Subscribe';
 
 function App() {
-
-  const testStyle = {
-    // backgroundColor: 'red',
-    height: '100%',
-    // paddingTop: '20px'
-    // marginLeft: '10%',
-    // marginRight:'10%'
-  }
-
-  const rowStyle = {
-    height: '100%',
-    backgroundColor: 'grey'
-  }
-
   return (
     <div className="App">
       <Header />
 
-      <div style={testStyle}>
-        <Row style={rowStyle}>
+      <div className="mainSection">
+        <Row className="mainRow">
 
           {/* Ads */}
           <Ads />
