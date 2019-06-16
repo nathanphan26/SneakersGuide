@@ -53,7 +53,7 @@ export class Main extends Component {
             <Image src={YeezyAntila} month='June' day='22' title='Yeezy Boost 350 V2 Antila'/>
           </Row>
           <Row className="shoeRow">
-            <Image src={YeezyVanta} month='June' day='15' title='' expired={true}/>
+            <Image src={YeezyVanta} month='June' day='15' title='Yeezy Boost 700 Vanta' expired={true}/>
           </Row>
         </MediaQuery>
         <MediaQuery query="(min-device-width: 901px)">
