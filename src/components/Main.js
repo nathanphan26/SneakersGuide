@@ -7,6 +7,7 @@ import YeezySynth from '../assets/yeezy_synth.jpg'
 import YeezyLundmark from '../assets/yeezy_lundmark.jpg'
 
 import Image from './Image';
+import Month from './Month';
 
 export class Main extends Component {
   render() {
@@ -27,9 +28,12 @@ export class Main extends Component {
       justifyContent: 'space-around'
     }
 
+
+
     return (
       
       <Col xs='12' md='8' style={colStyle2}>
+        <Month />
         <Row style={innerRowStyle}>
           <MediaQuery query="(max-device-width: 767px)">
             <Image src={YeezyBlack}/>
@@ -39,6 +43,7 @@ export class Main extends Component {
             <Image src={YeezyBlack}/>
           </MediaQuery>
         </Row>
+        <Month />
         <Row style={innerRowStyle}>
           <MediaQuery query="(max-device-width: 767px)">
             <Image src={YeezyBlack}/>
