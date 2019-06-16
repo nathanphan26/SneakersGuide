@@ -17,47 +17,73 @@ import Month from './Month';
 
 export class Main extends Component {
   render() {
+
     return ( 
       <Col xs='12' md='8' id="mainContainer">
         <Month month='July'/>
-        <Row className="shoeRow">
-          <MediaQuery query="(max-device-width: 767px)">
-            <Image src={YeezySynth} month='June' day='22' title='Yeezy 350 V2 Synth'/>
-          </MediaQuery>
-          <MediaQuery query="(min-device-width: 768px)">
-            <Image src={YeezySynth} month='June' day='22' title='Yeezy 350 V2 Synth'/>
-            <Image src={YeezyBlack} month='June' day='22' title='Yeezy 350 V2 Black'/>
-          </MediaQuery>
-        </Row>
+        <MediaQuery query="(max-device-width: 767px)">
+          <Row className="shoeRow">
+            <Image src={YeezyLundmark} month='July' day='13' title='Yeezy Boost 350 V2 Lundmark'/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 768px)">
+          <Row className="shoeRow">
+            <Image src={YeezyLundmark} month='July' day='13' title='Yeezy Boost 350 V2 Lundmark'/>
+            <Image src='' month='' day='' title=''/>
+          </Row>
+        </MediaQuery>
         <Month month='June'/>
-        <Row className="shoeRow">
-          <MediaQuery query="(max-device-width: 767px)">
-            <Image src={YeezyBlack}/>
-          </MediaQuery>
-          <MediaQuery query="(min-device-width: 768px)">
-            <Image src={YeezyLundmark} month='June' day='22' title='Yeezy 350 V2 Lundmark'/>
-            <Image src={YeezyAntila} month='June' day='22' title='Yeezy 350 V2 Antile'/>
-          </MediaQuery>
-        </Row>
+        <MediaQuery query="(max-device-width: 767px)">
+          <Row className="shoeRow">
+            <Image src={YeezyUtilityBlack} month='June' day='29' title='Yeezy Boost 700 Utility Black'/>
+          </Row>
+          <Row className="shoeRow">
+            <Image src={YeezySynth} month='June' day='22' title='Yeezy 350 V2 Synth'/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 768px)">
+          <Row className="shoeRow">
+            <Image src={YeezyUtilityBlack} month='June' day='29' title='Yeezy Boost 700 Utility Black'/>
+            <Image src={YeezySynth} month='June' day='22' title='Yeezy Boost 350 V2 Synth'/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 767px)">
+          <Row className="shoeRow">
+            <Image src={YeezyAntila} month='June' day='22' title='Yeezy Boost 350 V2 Antila'/>
+          </Row>
+          <Row className="shoeRow">
+            <Image src={YeezyVanta} month='June' day='15' title='' expired={true}/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 768px)">
+          <Row className="shoeRow">
+            <Image src={YeezyAntila} month='June' day='22' title='Yeezy Boost 350 V2 Antila'/>
+            <Image src={YeezyVanta} month='June' day='15' title='Yeezy Boost 700 Vanta' expired={true}/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 767px)">
+          <Row className="shoeRow">
+            <Image src={YeezyBlack} month='June' day='6' title='Yeezy Boost 350 V2 Black' expired={true}/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 768px)">
+          <Row className="shoeRow">
+            <Image src={YeezyBlack} month='June' day='6' title='Yeezy Boost 350 V2 Black' expired={true}/>
+            <Image src='' month='' day='' title=''/>
+          </Row>
+        </MediaQuery>
         <Month month='May'/>
-        <Row className="shoeRow">
-          <MediaQuery query="(max-device-width: 767px)">
-            <Image src={YeezyBlack}/>
-          </MediaQuery>
-          <MediaQuery query="(min-device-width: 768px)">
-            <Image src={YeezyGlow} month='June' day='22' title='Yeezy 350 V2 Glow'/>
-            <Image src={YeezyUtilityBlack} month='June' day='22' title='Yeezy 700 Utiltiy Black'/>
-          </MediaQuery>
-        </Row>
-        <Row className="shoeRow">
-          <MediaQuery query="(max-device-width: 767px)">
-            <Image src={YeezyBlack}/>
-          </MediaQuery>
-          <MediaQuery query="(min-device-width: 768px)">
-            <Image src={YeezyVanta} month='June' day='22' title='Yeezy 700 Vanta'/>
-            <Image src=''/>
-          </MediaQuery>
-        </Row>
+        <MediaQuery query="(max-device-width: 767px)">
+          <Row className="shoeRow">
+            <Image src={YeezyGlow} month='May' day='25' title='Yeezy Boost 350 V2 Glow' expired={true}/>
+          </Row>
+        </MediaQuery>
+        <MediaQuery query="(min-device-width: 768px)">
+          <Row className="shoeRow">
+            <Image src={YeezyGlow} month='May' day='25' title='Yeezy Boost 350 V2 Glow' expired={true}/>
+            <Image src='' month='' day='' title=''/>
+          </Row>
+        </MediaQuery>
       </Col>
     )
   }

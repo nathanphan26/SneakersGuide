@@ -8,7 +8,7 @@ export class Month extends Component {
 
     return (
       <Row className="months">
-        <Col sm="12" md={{ size: 4, offset: 4 }}>
+        <Col sm="12" md={{ size: 4, offset: 1 }}>
           <h3 className="month">{month}</h3>
         </Col>
       </Row>
