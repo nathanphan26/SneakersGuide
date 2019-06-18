@@ -1,3 +1,21 @@
+@media (max-width:900px) {
+  #fragment {
+    display: none;
+  }
+  #fragment2 {
+    display: block;
+  }
+}
+
+@media (min-width:901px) {
+  #fragment {
+    display: block;
+  }
+  #fragment2 {
+    display: none;
+  }
+}
+
 html {
   background-color: grey;
 }
