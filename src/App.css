@@ -5,14 +5,32 @@
   #fragment2 {
     display: block;
   }
+  #fragment3 {
+    display: none;
+  }
 }
 
-@media (min-width:901px) {
+@media (min-width:901px) and (max-width:1387px) {
   #fragment {
     display: block;
   }
   #fragment2 {
     display: none;
+  }
+  #fragment3 {
+    display: none;
+  }
+}
+
+@media (min-width:1388px) {
+  #fragment {
+    display: none;
+  }
+  #fragment2 {
+    display: none;
+  }
+  #fragment3 {
+    display: block;
   }
 }
 
@@ -35,12 +53,11 @@ body {
 
 .mainRow {
   height: 100%;
-  /* background-color: #494850; */
   background-color: #6B6D76;
 }
 
 .months {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .month {

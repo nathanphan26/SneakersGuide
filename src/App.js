@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
+
 import { Switch, Route } from "react-router-dom";
 import { Row } from 'reactstrap';
-import MediaQuery from 'react-responsive';
  
 import Header from './components/Header';
 import Ads from './components/Ads';

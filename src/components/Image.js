@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Col } from 'reactstrap';
 
 export class Image extends Component {
   render() {
