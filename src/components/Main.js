@@ -9,34 +9,18 @@ import YeezyGlow from '../assets/yeezy_350_glow_2.jpg';
 import YeezyUtilityBlack from '../assets/yeezy_700_utilityblack.jpg';
 import YeezyVanta from '../assets/yeezy_700_vanta.jpg'
 
-
-
 import Image from './Image';
 import Month from './Month';
+import Description from './Description';
 
 export class Main extends Component {
   render() {
-
-    const rowStyle = {
-      width: "100%",
-      margin: "0"
-      // marginLeft: "20px",
-      // marginRight: "20px"
-    }
-
-    const alertStyle = {
-      marginLeft: "50px",
-      marginRight: "50px"
-    }
-
     return ( 
       <Col xs='12' md='8' id="mainContainer">
-      <Row style={rowStyle}>
-        <Alert color="warning" style={alertStyle}>
-          Make money reselling sneakers on StockX, Grailed, Ebay, and many more. Resell predictions given here on various sneakers. Yeezy, Nike, Off-White, etc. 
-        </Alert>
-      </Row>
-      <div id="fragment">
+        <Description />
+
+        {/* (min-width:901px) and (max-width:1387px) */}
+        <div id="fragment">
           <Month month='July'/>
 
           <Row className="shoeRow">
@@ -69,6 +53,7 @@ export class Main extends Component {
           </Row>
         </div>
 
+        {/* (max-width:900px) */}
         <div id="fragment2">
           <Month month='July'/>
           
@@ -103,6 +88,7 @@ export class Main extends Component {
           </Row>
         </div>
 
+        {/* (min-width:1388px) */}
         <div id="fragment3">
           <Row>
             <Col md="1"></Col>

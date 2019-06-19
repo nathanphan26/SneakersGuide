@@ -104,3 +104,14 @@ body {
   text-align: center;
   overflow: hidden;
 }
+
+#alertRow {
+  width: 100%;
+  margin: 0;
+}
+
+#alert {
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}

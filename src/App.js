@@ -17,8 +17,8 @@ function App() {
       <Header />
 
       <div className="mainSection">
-        
         <Row className="mainRow">
+        
           {/* Ads */}
           <Ads />
 
