@@ -1,3 +1,39 @@
+@media (max-width:900px) {
+  #fragment {
+    display: none;
+  }
+  #fragment2 {
+    display: block;
+  }
+  #fragment3 {
+    display: none;
+  }
+}
+
+@media (min-width:901px) and (max-width:1387px) {
+  #fragment {
+    display: block;
+  }
+  #fragment2 {
+    display: none;
+  }
+  #fragment3 {
+    display: none;
+  }
+}
+
+@media (min-width:1388px) {
+  #fragment {
+    display: none;
+  }
+  #fragment2 {
+    display: none;
+  }
+  #fragment3 {
+    display: block;
+  }
+}
+
 html {
   background-color: grey;
 }
@@ -9,6 +45,7 @@ body {
 .App {
   overflow: hidden;
   height: 100%;
+  background-color: #6B6D76;
 }
 
 .mainSection {
@@ -17,12 +54,11 @@ body {
 
 .mainRow {
   height: 100%;
-  /* background-color: #494850; */
   background-color: #6B6D76;
 }
 
 .months {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .month {
@@ -67,4 +103,15 @@ body {
   height: 100%;
   text-align: center;
   overflow: hidden;
+}
+
+#alertRow {
+  width: 100%;
+  margin: 0;
+}
+
+#alert {
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
