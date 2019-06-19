@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Alert } from 'reactstrap';
 
 import YeezyBlack from '../assets/yeezy_black.jpg';
 import YeezySynth from '../assets/yeezy_synth.jpg';
@@ -16,8 +16,26 @@ import Month from './Month';
 
 export class Main extends Component {
   render() {
+
+    const rowStyle = {
+      width: "100%",
+      margin: "0"
+      // marginLeft: "20px",
+      // marginRight: "20px"
+    }
+
+    const alertStyle = {
+      marginLeft: "50px",
+      marginRight: "50px"
+    }
+
     return ( 
       <Col xs='12' md='8' id="mainContainer">
+      <Row style={rowStyle}>
+        <Alert color="warning" style={alertStyle}>
+          Make money reselling sneakers on StockX, Grailed, Ebay, and many more. Resell predictions given here on various sneakers. Yeezy, Nike, Off-White, etc. 
+        </Alert>
+      </Row>
       <div id="fragment">
           <Month month='July'/>
 
